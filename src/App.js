@@ -1,41 +1,29 @@
-import React from "react";
-
-import { Cards, CountryPicker, Chart } from "./components";
-import { fetchData } from "./api/";
+import React, { useState } from "react";
+import Statistics from "./pages/Statistics/Statistics";
 import styles from "./App.module.css";
-
+import { Tab, Tabs, AppBar } from "@material-ui/core";
 import image from "./images/image.png";
 
-class App extends React.Component {
-  state = {
-    data: {},
-    country: "",
+const App = () => {
+  const [value, setValue] = useState(0);
+  const handleTabs = (e, val) => {
+    console.warn(val);
+    setValue(val);
   };
-
-  async componentDidMount() {
-    const data = await fetchData();
-
-    this.setState({ data });
-  }
-
-  handleCountryChange = async (country) => {
-    const data = await fetchData(country);
-
-    this.setState({ data, country: country });
-  };
-
-  render() {
-    const { data, country } = this.state;
-
-    return (
-      <div className={styles.container}>
-        <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className={styles.container}>
+      <AppBar position="absolute">
+        <Tabs centered value={value} onChange={handleTabs}>
+          <Tab label="statistics" />
+          <Tab label="About Covid-19" />
+          <Tab label="protection" />
+          protection
+        </Tabs>
+      </AppBar>
+      <img className={styles.image} src={image} alt="COVID-19" />
+      <Statistics />
+    </div>
+  );
+};
 
 export default App;
