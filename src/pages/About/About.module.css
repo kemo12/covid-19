@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 770px) {
+    .container {
+      margin: 0 10%;
+    }
+  }
+
+.img{
+    display: block;
+    padding-left: 50px;
+    width: 50%;
+    height: 10%;
+  }
+  .title{
+left:0% ;    
+}

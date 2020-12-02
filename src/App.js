@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Statistics from "./pages/Statistics/Statistics";
 import About from "./pages/About/About";
 import Protection from "./pages/Protection/Protection";
+import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 import image from "./images/image.png";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 const App = () => {
-  const routes = ["/Statistics", "/About", "/Protection"];
+  const routes = ["/statistics", "/About", "/Protection"];
   const [value, setValue] = useState(0);
   const handleTabs = (e, value) => {
     setValue(value);
@@ -55,11 +56,12 @@ const App = () => {
         />
 
         <Switch>
-          <Route path="/Statistics" component={Statistics} />
+          <Route path="/statistics" component={Statistics} />
           <Route path="/About" component={About} />
           <Route path="/Protection" component={Protection} />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };
