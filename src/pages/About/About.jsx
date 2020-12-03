@@ -35,14 +35,17 @@ const About = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>What is covid-19?</h1>
       <div>
-        <Slider {...settings}>
-          {photos.map((photo) => {
-            return (
+        <Slider {...settings} className={styles.Slider}>
+          {photos.map((photo) => (
+            <div>
               <div>
-                <img width="50px" src={photo.url} />
+                <img width="200px" src={photo.url} alt="s" />
               </div>
-            );
-          })}
+              <div>
+                <img width="200px" src={photo.url} alt="s" />
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
