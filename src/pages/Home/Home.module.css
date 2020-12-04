@@ -1,23 +1,22 @@
 .container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    text-align: center;
   }
   @media only screen and (max-width: 770px) {
     .container {
       margin: 0 10%;
     }
   }
+ 
 
-.img{
-    display: block;
-    padding-left: 50px;
-    width: 50%;
-    height: 10%;
-  }
-  .title{
-left:0% ;    
-}
 .slider{
-  max-width:700px;
+  margin-top: 10px;
+  width:700px;
+  height: 200px;
+}
+.sliderImg{
+  border-radius: 10px;
+  width: 700px;
+height: 200px;
 }
