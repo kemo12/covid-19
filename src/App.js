@@ -55,9 +55,9 @@ const App = () => {
         />
 
         <Switch>
-          <Route path="/statistics" component={Statistics} />
-          <Route path="/Prevention" component={Prevention} />
-          <Route path="/" component={Home} />
+          <Route exact path="/statistics" component={Statistics} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Prevention" component={Prevention} />
         </Switch>
       </BrowserRouter>
       <Footer />

@@ -1,47 +1,53 @@
 import React from "react";
-import Slider from "react-slick";
-import { slide_imgae1, slide_imgae2, slide_imgae3 } from "../../images";
+import { slide_imgae1 } from "../../images";
 import styles from "./Home.module.css";
-import { Article } from "../../components";
+import { Typography } from "@material-ui/core";
 const Home = () => {
-  const settings = {
-    dots: true,
-    fade: true,
-    infinte: true,
-    speed: 500,
-    slidesToShow: 1,
-    arrows: true,
-    slidesToScroll: 1,
-    className: "slides",
-  };
   return (
     <div className={styles.container}>
-      <div>
-        <Slider {...settings} className={styles.slider}>
-          <div>
-            <img
-              className={styles.sliderImg}
-              src={slide_imgae1}
-              alt="slide_imgae1"
-            />
-          </div>
-          <div>
-            <img
-              className={styles.sliderImg}
-              src={slide_imgae2}
-              alt="slide_imgae2"
-            />
-          </div>
-          <div>
-            <img
-              className={styles.sliderImg}
-              src={slide_imgae3}
-              alt="slide_imgae3"
-            />
-          </div>
-        </Slider>
+      <h1>What is Covid-19?</h1>
+      <div className={styles.supContainer}>
+        <img
+          alt="articalImage"
+          className={styles.articleImage}
+          src={slide_imgae1}
+        />
+
+        <div>
+          <Typography
+            variant="body1"
+            gutterBottom
+            align="left"
+            paragraph="true"
+          >
+            <b>Corona virus disease (COVID-19)</b> is an infectious disease
+            caused by a newly discovered coronavirus.
+          </Typography>
+          <Typography variant="body1" gutterBottom align="left">
+            Most people infected with the COVID-19 virus will experience mild to
+            moderate respiratory illness and recover without requiring special
+            treatment.
+          </Typography>
+
+          <Typography variant="body2" gutterBottom align="left">
+            Older people, and those with underlying medical problems like
+            cardiovascular disease, diabetes, chronic respiratory disease, and
+            cancer are more likely to develop serious illness.
+          </Typography>
+          <Typography variant="body2" gutterBottom align="left">
+            The best way to prevent and slow down transmission is to be well
+            informed about the COVID-19 virus, the disease it causes and how it
+            spreads. Protect yourself and others from infection by washing your
+            hands or using an alcohol based rub frequently and not touching your
+            face.
+          </Typography>
+          <Typography variant="body2" gutterBottom align="left">
+            The COVID-19 virus spreads primarily through droplets of saliva or
+            discharge from the nose when an infected person coughs or sneezes,
+            so it’s important that you also practice respiratory etiquette .
+          </Typography>
+        </div>
       </div>
-      <Article />
     </div>
   );
 };
