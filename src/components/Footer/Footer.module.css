@@ -3,7 +3,6 @@ footer{
     flex-direction: column;
 justify-content: center;
 font-size: 1.5rem;
-    position: fixed;
     bottom: 0px;
    background-color: #3f51b5;
    margin-top:100px;
