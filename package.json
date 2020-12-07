@@ -2,7 +2,7 @@
   "name": "covid",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/kemo12/covid-19",
+  "homepage": "https://kemo12.github.io/covid-19/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.11.6",
