@@ -5,6 +5,7 @@ import CovidMap from "../../components/Map/components/CovidMap";
 import LoadCountriesTask from "../..//components/Map/tasks/LoadCountriesTask";
 import Legend from "../../components/Map/components/Legend";
 import legendItems from "../../components/Map/entities/LegendItems";
+import style from "./Map.module.css";
 
 const Map = () => {
   const [countries, setCountries] = useState([]);

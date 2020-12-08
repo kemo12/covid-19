@@ -15,12 +15,13 @@ const Legend = ({ legendItems }) => {
             backgroundColor: item.color,
             flex: 1,
             display: "flex",
-            alignItems: "center", // vertical
-            justifyContent: "center", // horiztontal
+            alignItems: "center",
+            justifyContent: "center",
             color: item.textColor != null ? item.textColor : "black",
             fontWeight: "bolder",
             fontSize: "1em",
-            height: "10vh",
+            height: "60px",
+            textAlign: "center",
           }}
         >
           <span>{item.title}</span>

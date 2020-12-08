@@ -67,6 +67,57 @@ const Home = () => {
               staying away from large groups of people.
             </li>
           </ul>
+          <h3>Symptoms</h3>
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            align="left"
+            paragraph="true"
+          >
+            <b>COVID-19</b> affects different people in different ways. Most
+            infected people will develop mild to moderate illness and recover
+            without hospitalization.
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom align="left">
+            Most common symptoms:
+          </Typography>
+          <ul>
+            <li>fever.</li>
+            <li>dry cough</li>
+            <li>tiredness.</li>
+          </ul>
+          <Typography variant="subtitle2" gutterBottom align="left">
+            Less common symptoms:
+          </Typography>
+          <ul>
+            <li>aches and pains</li>
+            <li>sore throat.</li>
+            <li>diarrhoea.</li>
+            <li>conjunctivitis.</li>
+            <li>headache.</li>
+            <li>loss of taste or smell.</li>
+            <li>a rash on skin, or discolouration of fingers or toes.</li>
+          </ul>
+          <Typography variant="subtitle2" gutterBottom align="left">
+            Serious symptoms:
+          </Typography>
+          <ul>
+            <li>difficulty breathing or shortness of breath.</li>
+            <li>chest pain or pressure.</li>
+            <li>loss of speech or movement.</li>
+          </ul>
+          <Typography variant="subtitle1" gutterBottom align="left">
+            Seek immediate medical attention if you have serious symptoms.
+            Always call before visiting your doctor or health facility.
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom align="left">
+            People with mild symptoms who are otherwise healthy should manage
+            their symptoms at home.
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom align="left">
+            On average it takes 5–6 days from when someone is infected with the
+            virus for symptoms to show, however it can take up to 14 days.
+          </Typography>
         </div>
       </div>
     </div>
